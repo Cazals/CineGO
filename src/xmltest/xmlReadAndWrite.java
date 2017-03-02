@@ -34,7 +34,7 @@ public class xmlReadAndWrite {
 		    /*
 		     * Etape 3 : création d'un Document
 		     */
-		    final Document document= builder.parse(new File("bob.xml"));
+		    final Document document= builder.parse(new File("PlansSalle.xml"));
 		    
 		    
 		    final Element racine = document.getDocumentElement();
@@ -42,8 +42,14 @@ public class xmlReadAndWrite {
 		    System.out.println("\n*************RACINE************");
 		    System.out.println(racine.getNodeName());
 		    
-		    
-		    
+//		    for (int i = 0; i<nbRacineNoeuds; i++) {
+//		        if(racineNoeuds.item(i).getNodeType() == Node.ELEMENT_NODE) {
+//		            final Element personne = (Element) racineNoeuds.item(i);
+//					
+//			    //Affichage d'une personne
+//			    System.out.println("\n*************PERSONNE************");
+//			    System.out.println("sexe : " + personne.getAttribute("sexe"));
+//		    
 		    
 	            
             final NodeList cinemaNoeuds = racine.getChildNodes();
@@ -54,10 +60,10 @@ public class xmlReadAndWrite {
             for (int i = 0; i<nbCinemaNoeuds; i++) {
     	        if(cinemaNoeuds.item(i).getNodeType() == Node.ELEMENT_NODE) {
     	            final Element Cinema = (Element) cinemaNoeuds.item(i);
-    	            final Element idCinema = (Element) Cinema.getElementsByTagName("idCinema").item(0);
+//    	            final Element idCinema = (Element) Cinema.getElementsByTagName("idCinema").item(0);
     	            
-    	            System.out.println("idCinema: " + idCinema.getTextContent());
-    	            
+//    	            System.out.println("idCinema: " + idCinema.getTextContent());
+    	            System.out.println("idCinema: " + Cinema.getAttribute("idCinema"));
     	      
     	            
     		    
