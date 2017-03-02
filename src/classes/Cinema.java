@@ -60,7 +60,6 @@ public class Cinema {
 	}
 	
 	
-
 	public ArrayList<PlanSalle> getListPlanSalle() {
 		return listPlanSalle;
 	}

@@ -14,9 +14,7 @@ public class CaseSalle {
 	private int idPlanSalle;
 	private int idPositionCase;
 	private int idTypeCase;
-	private TypeCase classTypeCase;
-	private PositionCase classPositionCase;
-	
+
 	public CaseSalle() {};
 	
 	public CaseSalle(int id, String nomSiegeCase,int idPlanSalle, int idPositionCase, int idTypeCase){
@@ -66,32 +64,11 @@ public class CaseSalle {
 	public void setIdTypeCase(int idTypeCase) {
 		this.idTypeCase = idTypeCase;
 	}
-	
-
-	public TypeCase getClassTypeCase() {
-		return classTypeCase;
-	}
-
-	public void setClassTypeCase(TypeCase classTypeCase) {
-		this.classTypeCase = classTypeCase;
-	}
-
-	public PositionCase getClassPositionCase() {
-		return classPositionCase;
-	}
-
-	public void setClassPositionCase(PositionCase classPositionCase) {
-		this.classPositionCase = classPositionCase;
-	}
 
 	@Override
 	public String toString() {
 		return "CaseSalle [id=" + id + ", nomSiegeCase=" + nomSiegeCase + ", idPlanSalle=" + idPlanSalle
-				+ ", idPositionCase=" + idPositionCase + ", idTypeCase=" + idTypeCase + ", classTypeCase="
-				+ classTypeCase + ", classPositionCase=" + classPositionCase + "]";
+				+ ", idPositionCase=" + idPositionCase + ", idTypeCase=" + idTypeCase + "]";
 	}
-
-	
-	
 	
 }
