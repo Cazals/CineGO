@@ -22,7 +22,6 @@ public class PlanSalle {
 	public PlanSalle(int id, int numPlanSalle, int idCinema){
 		this.id=id;
 		this.numPlanSalle=numPlanSalle;
-		this.nomPlanSalle=nomPlanSalle;
 		this.idCinema=idCinema;
 	}
 
