@@ -1,0 +1,53 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT CineGo (Cinema)>
+<!ATTLIST CineGo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Cinema (idCinema,Salle)>
+<!ATTLIST Cinema
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT idCinema (#PCDATA)>
+<!ATTLIST idCinema
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Salle (numSalle,nomSalle,nbSieges,Sieges)>
+<!ATTLIST Salle
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT numSalle (#PCDATA)>
+<!ATTLIST numSalle
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nomSalle (#PCDATA)>
+<!ATTLIST nomSalle
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nbSieges (#PCDATA)>
+<!ATTLIST nbSieges
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Sieges (Siege)+>
+<!ATTLIST Sieges
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Siege (numRFID,nomTypeSiege,x,y)>
+<!ATTLIST Siege
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT numRFID (#PCDATA)>
+<!ATTLIST numRFID
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT nomTypeSiege (#PCDATA)>
+<!ATTLIST nomTypeSiege
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT x (#PCDATA)>
+<!ATTLIST x
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT y (#PCDATA)>
+<!ATTLIST y
+  xmlns CDATA #FIXED ''>

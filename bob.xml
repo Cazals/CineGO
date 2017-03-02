@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<CineGo>
+    <Cinema>
+        <idCinema>1</idCinema>
+        <Salle>
+            <numSalle>1</numSalle>
+            <nomSalle>Wiwolo</nomSalle>
+            <Sieges>
+                <Siege>
+                    <nomTypeSiege>Normal</nomTypeSiege>
+                    <x>1</x>
+                    <y>A</y>
+                </Siege>
+                <Siege>
+                    <nomTypeSiege>Handicape</nomTypeSiege>
+                    <x>12</x>
+                    <y>D</y>
+                </Siege>
+                <Siege>
+                    <nomTypeSiege>Couloir</nomTypeSiege>
+                    <x>4</x>
+                    <y>F</y>
+                </Siege>
+            </Sieges>
+        </Salle>
+    </Cinema>
+</CineGo>
+
